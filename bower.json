@@ -1,0 +1,21 @@
+{
+  "name": "android-filetransfer",
+  "homepage": "https://github.com/gbssg/android-filetransfer",
+  "authors": [
+    "Jan Biasi <jan.biasi@namics.com>"
+  ],
+  "description": "",
+  "main": "main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}

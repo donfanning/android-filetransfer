@@ -1,0 +1,9 @@
+{
+    "analytics": true,
+    "directory": "./assets/vendor",
+    "scripts": {
+        "preinstall": "",
+        "postinstall": "",
+        "preuninstall": ""
+    }
+}
