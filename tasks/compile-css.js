@@ -21,9 +21,6 @@ exports = module.exports = (gulp, plugins, config) => {
 	return () => {
         config.process.forEach(asset => {
             console.log(`Running style compilation for ${asset.name} ...`);
-            if(asset.name !== 'dependencies') {
-                asset.styles = asset.styles.concat(utils.getComponentFiles('css'))
-            }
             gulp.src(asset.styles)
                 .pipe(plugins.plumber())
                 .pipe(plugins.cached(`${asset.name}:css`))

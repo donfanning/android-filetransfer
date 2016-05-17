@@ -3,26 +3,29 @@
     "process": [
         {
             "name": "bundle",
-            "scripts": [],
+            "scripts": [
+                "./assets/js/global*.js",
+                "./assets/js/helpers*.js",
+                "./assets/js/*.js",
+                "./assets/js/components/**/*.js"
+            ],
             "styles": [
                 "./assets/css/reset*.{scss,sass,css}",
                 "./assets/css/default*.{scss,sass,css}",
-                "./assets/css/**/*.{scss,sass,css}"
+                "./assets/css/*.{scss,sass,css}",
+                "./assets/css/components/**/*.{scss,sass,css}"
             ]
         }, {
             "name": "dependencies",
             "scripts": [
-                "./assets/vendor/jquery/dist/jquery.min.js",
-                "./assets/js/global*.js",
-                "./assets/js/helpers*.js",
-                "./assets/js/**/*.js"
+                "./assets/vendor/jquery/dist/jquery.min.js"
             ],
             "styles": []
         }
     ],
     "copy": {
         "./dist/assets/fonts": [
-            "./assets/fonts/**/*"
+            "./assets/fonts/**/*.{eot,svg,ttf,woff}"
         ],
         "./dist/assets/img": [
             "./assets/img/**/*.{jpeg,jpg,png,gif,svg}"
