@@ -6,3 +6,32 @@
 html {
     font-family: sans-serif;
 }
+
+html, body, main {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+}
+
+small {
+    font-size: 12px;
+}
+
+main {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #0091EA;
+    will-change: color;
+    transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+
+    &:hover {
+        color: #0277BD;
+    }
+}

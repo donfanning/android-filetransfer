@@ -1,0 +1,19 @@
+.component-sidebar,
+.component-content {
+    display: inline-block;
+}
+
+.component-sidebar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+}
+
+.component-content {
+    width: auto;
+    max-width: calc(100% - 200px);
+    margin-left: 200px;
+}
