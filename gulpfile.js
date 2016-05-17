@@ -24,4 +24,8 @@ gulp.task('copy', utils.load('copy'));
 gulp.task('build', ['clean', 'copy', 'compile', 'minify']);
 gulp.task('develop', ['build', 'watch']);
 
+gulp.task('pack:create', utils.load('pack'));
+gulp.task('pack:archive', utils.load('archive'));
+gulp.task('pack', ['pack:create', 'pack:archive']);
+
 gulp.task('default', [env === 'development' ? 'develop' : 'build']);
