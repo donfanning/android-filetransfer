@@ -1,71 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Android Filetransfer</title>
     <link rel="stylesheet" href="../dist/assets/bundle.css">
 </head>
 <body>
     <main>
-        <aside class="component component-sidebar">
-            <div class="sidebar-element">
-                <h2>Devices</h2>
-                <nav class="navigation--devices">
-                    <ul>
-                        <li>
-                            <i class="icon-laptop"></i>
-                            This Computer
-                        </li>
-                        <li>
-                            <i class="icon-smartphone"></i>
-                            Smartphone XY
-                        </li>
-                        <li>
-                            <i class="icon-tablet_android"></i>
-                            Tablet XY
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="sidebar-element">
-                <h2>Sync</h2>
-                <nav class="navigation--actions">
-                    <ul>
-                        <li>
-                            <i class="icon-library_music"></i>
-                            Music
-                        </li>
-                        <li>
-                            <i class="icon-library_books"></i>
-                            Documents
-                        </li>
-                        <li>
-                            <i class="icon-movie"></i>
-                            Movies
-                        </li>
-                        <li>
-                            <i class="icon-person"></i>
-                            Custom
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="sidebar-element">
-                <h2>Settings</h2>
-                <nav class="navigation--settings">
-                    <ul>
-                        <li>
-                            <i class="icon-file_upload"></i>
-                            Import
-                        </li>
-                        <li>
-                            <i class="icon-file_download"></i>
-                            Export
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
+        <div class="dom-load" path="partials/components/sidebar.html"></div>
         <section class="component component-content">
             <h1><i class="icon-high_quality"></i>Content</h1>
             <a href="#" class="btn btn-primary">A Button Element</a>
@@ -75,6 +17,6 @@
     <script src="../dist/assets/bundle.js" charset="utf-8"></script>
 </body>
 <script>
-    require('./render/index.js')
+    require('./render/index.js');
 </script>
 </html>
