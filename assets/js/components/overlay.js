@@ -20,7 +20,7 @@
             $node.removeClass('js-fade-out');
             root.setTimeout(function() {
                 $node.addClass('--hide');
-                $node.find('.component-loader')
+                $node.find('.component-loader--wrapper')
                     .addClass('--stop-animation')
                     .fadeOut(500)
                     .delay(500)
