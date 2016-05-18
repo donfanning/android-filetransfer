@@ -29,6 +29,8 @@ exports = module.exports = (gulp, plugins, config) => {
                 .pipe(plugins.postcss(processors))
                 .pipe(plugins.remember(`${asset.name}:css`))
                 .pipe(plugins.concat(`${asset.name}.css`))
+                .pipe(plugins.concatUtil.header('/* >> File <%= file.path %> */\n'))
+                .pipe(plugins.concatUtil.footer('/* << End */\n\n'))
                 .pipe(plugins.sourcemaps.write('.'))
                 .pipe(gulp.dest(config.release));
         });

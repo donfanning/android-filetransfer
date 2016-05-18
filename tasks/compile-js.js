@@ -12,6 +12,8 @@ exports = module.exports = (gulp, plugins, config) => {
                 .pipe(plugins.sourcemaps.init({loadMaps: true}))
                 .pipe(plugins.remember(`${asset.name}:js`))
                 .pipe(plugins.concat(`${asset.name}.js`))
+                .pipe(plugins.concatUtil.header('// >> File <%= file.path %>\n'))
+                .pipe(plugins.concatUtil.footer('// << End\n\n'))
                 .pipe(plugins.sourcemaps.write('.'))
                 .pipe(gulp.dest(config.release));
         });
