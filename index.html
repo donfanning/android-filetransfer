@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="dist/assets/bundle.css">
 </head>
 <body>
-    <ng-view></ng-view>
+    <main>
+        <div class="component component-sidebar" ng-include="'components/sidebar/sidebar.html'"></div>
+    </main>
+    <ng-include src="'components/overlay/overlay-loader.html'"></ng-include>
     <script src="dist/assets/dependencies.js" charset="utf-8"></script>
     <script src="dist/assets/client.js" charset="utf-8"></script>
     <script src="dist/assets/bundle.js" charset="utf-8"></script>
