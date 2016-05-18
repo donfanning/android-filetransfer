@@ -5,7 +5,7 @@ const utils = require('./utils');
 exports = module.exports = (gulp, plugins, config) => {
 	return () => {
         config.process.forEach(asset => {
-            console.log(`Running script compilation for ${asset.name} ...`);
+            console.log(`Running script compilation for ${asset.name} [${asset.scripts.length}] ...`);
             gulp.src(asset.scripts)
                 .pipe(plugins.plumber())
                 .pipe(plugins.cached(`${asset.name}:js`))

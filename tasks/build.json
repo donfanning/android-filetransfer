@@ -18,7 +18,17 @@
         }, {
             "name": "dependencies",
             "scripts": [
-                "./assets/vendor/jquery/dist/jquery.js"
+                "./assets/vendor/jquery/dist/jquery.js",
+                "./assets/vendor/hask/dist/hask.js"
+            ],
+            "styles": []
+        }, {
+            "name": "client",
+            "scripts": [
+                "./assets/vendor/angular/angular.js",
+                "./assets/vendor/angular-route/angular-route.js",
+                "./views/client.js",
+                "./views/*/*.js"
             ],
             "styles": []
         }

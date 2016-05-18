@@ -20,7 +20,7 @@ exports = module.exports = (gulp, plugins, config) => {
 
 	return () => {
         config.process.forEach(asset => {
-            console.log(`Running style compilation for ${asset.name} ...`);
+            console.log(`Running style compilation for ${asset.name} [${asset.styles.length}] ...`);
             gulp.src(asset.styles)
                 .pipe(plugins.plumber())
                 .pipe(plugins.cached(`${asset.name}:css`))
