@@ -7,13 +7,13 @@
                 "./assets/js/global*.js",
                 "./assets/js/helpers*.js",
                 "./assets/js/*.js",
-                "./assets/js/components/**/*.js"
+                "./components/*/js/**/*.js"
             ],
             "styles": [
                 "./assets/css/reset*.{scss,sass,css}",
                 "./assets/css/default*.{scss,sass,css}",
                 "./assets/css/*.{scss,sass,css}",
-                "./assets/css/components/**/*.{scss,sass,css}"
+                "./components/*/css/**/*.{scss,css,sass}"
             ]
         }, {
             "name": "dependencies",

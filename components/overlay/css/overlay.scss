@@ -1,0 +1,36 @@
+@import '../variables';
+
+.component-overlay {
+    max-height: 100%;
+    background-color: $color-primary;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+    .center-wrapper {
+        position: fixed;
+        min-width: 100px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .component-loader {
+        margin: 0 auto;
+    }
+
+    .info {
+        &.info-loading {
+            margin-top: 20px;
+            color: $color-primary-contrast;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-weight: 700;
+        }
+    }
+
+    &.--hide {
+        max-height: 0;
+    }
+}
