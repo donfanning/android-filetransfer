@@ -15,4 +15,27 @@ cd android-filetransfer
 npm install && npm start
 ```
 
+#### First-ever installation
+
+If you havent used any Node.js project before, follow the following steps below and above such as installing
+Git and Node.js.
+
+```bash
+# Mac OS X only!
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
+git clone https://github.com/gbssg/android-filetransfer.git
+cd android-filetransfer
+
+npm install -g npm && npm install -g bower gulp
+npm install && gulp && npm start
+```
+
+## Useful Links (Docs)
+
+* Angular.js [ngRoute](https://docs.angularjs.org/api/ngRoute) directive
+* Angular.js [ngInclude](https://docs.angularjs.org/api/ng/directive/ngInclude) directive
+* Angular.js [ngAnimate](https://docs.angularjs.org/api/ngAnimate) directive
+* ECMAScript 6 [Guide and How-To basics](http://www.2ality.com/2015/08/getting-started-es6.html)
+
 #### License [Apache License Version 2](LICENSE)
