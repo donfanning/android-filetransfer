@@ -16,6 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.3"
+    "jquery": "^2.2.3",
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "hask": "^1.4.0"
   }
 }
