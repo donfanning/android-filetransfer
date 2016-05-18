@@ -17,8 +17,14 @@
             }
         },
         processFadeOut: function($node) {
+            $node.removeClass('js-fade-out');
             root.setTimeout(function() {
                 $node.addClass('--hide');
+                $node.find('.component-loader')
+                    .addClass('--stop-animation')
+                    .fadeOut(500)
+                    .delay(500)
+                    .css('display', 'none');
             }, ($node.data('time') || 3000));
         }
     });

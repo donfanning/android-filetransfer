@@ -9,6 +9,8 @@
 
     .center-wrapper {
         position: fixed;
+        min-width: 100px;
+        text-align: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -16,6 +18,16 @@
 
     .component-loader {
         margin: 0 auto;
+    }
+
+    .info {
+        &.info-loading {
+            margin-top: 20px;
+            color: $color-primary-contrast;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-weight: 700;
+        }
     }
 
     &.--hide {
