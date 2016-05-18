@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="AndroidFiletransfer">
+<head>
+    <meta charset="utf-8">
+    <title>Android Filetransfer</title>
+    <link rel="stylesheet" href="dist/assets/bundle.css">
+</head>
+<body>
+    <ng-view></ng-view>
+    <script src="dist/assets/dependencies.js" charset="utf-8"></script>
+    <script src="dist/assets/client.js" charset="utf-8"></script>
+    <script src="dist/assets/bundle.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            App.start();
+        });
+    </script>
+</body>
+<script>
+    // This file is required by the index.html file and will
+    // be executed in the renderer process for that window.
+    // All of the Node.js APIs are available in this process.
+
+    const path = require('path');
+    const DOM = require('./lib/DOM');
+    const Settings = require('./lib/Settings');
+    const baseConfig = require(path.join(__dirname, 'content', 'config.json'));
+
+    let settings = new Settings(`${baseConfig.settings}.json`);
+
+    let viewModel = new DOM(document.body, {
+        preventAutoload: true
+    }).bootstrap();
+
+</script>
+</html>
