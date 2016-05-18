@@ -1,0 +1,24 @@
+@import '../variables';
+
+.component-overlay {
+    max-height: 100%;
+    background-color: $color-primary;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+    .center-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .component-loader {
+        margin: 0 auto;
+    }
+
+    &.--hide {
+        max-height: 0;
+    }
+}

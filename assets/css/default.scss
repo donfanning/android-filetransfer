@@ -1,3 +1,6 @@
+@import './variables';
+@import './mixins';
+
 *, *:before, *:after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -12,6 +15,7 @@ html, body, main {
 }
 
 body {
+    background-color: $color-primary;
     font-size: 14px;
 }
 
@@ -25,13 +29,11 @@ main {
 
 a {
     text-decoration: none;
-    color: #0091EA;
+    color: $color-primary;
     will-change: color;
-    transition: color .2s linear;
-    -moz-transition: color .2s linear;
-    -webkit-transition: color .2s linear;
+    @include transition(color .2s linear);
 
     &:hover {
-        color: #0277BD;
+        color: $color-primary-dark;
     }
 }
