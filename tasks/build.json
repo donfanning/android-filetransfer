@@ -28,6 +28,7 @@
                 "./assets/vendor/angular/angular.js",
                 "./assets/vendor/angular-route/angular-route.js",
                 "./views/client.js",
+                "./views/_global/**/*.js",
                 "./views/*/*.js"
             ],
             "styles": []
