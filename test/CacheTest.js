@@ -32,4 +32,12 @@ describe('Cache', function() {
 
         expect(cache.length).to.equal(entries.length);
     });
+
+    it('should empty the cache by calling .flush()', function() {
+        var oldCacheSize = cache.length;
+        cache.flush();
+
+        expect(oldCacheSize).to.equal(5);
+        expect(cache.length).to.equal(0);
+    });
 });
