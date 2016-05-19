@@ -10,7 +10,9 @@
                 "./components/*/js/**/*.js"
             ],
             "styles": [
-                "./assets/css/reset*.{scss,sass,css}",
+                "./assets/css/preload/reset*.{scss,sass,css}",
+                "./assets/css/preload/fonts.{scss,sass,css}",
+                "./assets/css/preload/material-icons.{scss,sass,css}",
                 "./assets/css/default*.{scss,sass,css}",
                 "./assets/css/*.{scss,sass,css}",
                 "./components/*/css/**/*.{scss,css,sass}"
@@ -21,9 +23,7 @@
                 "./assets/vendor/jquery/dist/jquery.js",
                 "./assets/vendor/hask/dist/hask.js"
             ],
-            "styles": [
-                "./assets/css/fonts*.{scss,css}"
-            ]
+            "styles": []
         }, {
             "name": "client",
             "scripts": [

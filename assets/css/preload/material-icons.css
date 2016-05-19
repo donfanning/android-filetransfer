@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'material-icons';
-    src: url('fonts/material-icons.eot?dgoeq');
-    src: url('fonts/material-icons.eot?dgoeq#iefix') format('embedded-opentype'),
-        url('fonts/material-icons.ttf?dgoeq') format('truetype'),
-        url('fonts/material-icons.woff?dgoeq') format('woff'),
-        url('fonts/material-icons.svg?dgoeq#material-icons') format('svg');
+    src: url('fonts/material_icons/material-icons.eot?dgoeq');
+    src: url('fonts/material_icons/material-icons.eot?dgoeq#iefix') format('embedded-opentype'),
+        url('fonts/material_icons/material-icons.ttf?dgoeq') format('truetype'),
+        url('fonts/material_icons/material-icons.woff?dgoeq') format('woff'),
+        url('fonts/material_icons/material-icons.svg?dgoeq#material-icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
