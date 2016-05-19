@@ -21,6 +21,20 @@ describe('Cache', function() {
         expect(cache.get('addNewEntryList')).to.deep.equal(['Hey there!', undefined, { a: 'b' }]);
     });
 
+    it('should be possible to bulk-insert cache entries', function() {
+        cache.flush();
+        cache.set({
+            1: 'a',
+            2: 'b',
+            3: 'c'
+        });
+
+        expect(cache.length).to.equal(3);
+        expect(cache.get(1)).to.equal('a');
+        expect(cache.get(2)).to.equal('b');
+        expect(cache.get(3)).to.equal('c');
+    });
+
     it('should return the actual size by accessing .length', function() {
         cache.flush();
 
