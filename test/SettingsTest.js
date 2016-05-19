@@ -35,13 +35,30 @@ describe('Settings', function() {
             remote: "/test/remote",
             local: "/test/local",
             flags: {
-                extension: "**/*.*",
-                ignore: []
+                direction: 0,
+                extension: "**/*.{css, js}",
+                ignore: ["!*.txt", "!ignore"]
             }
         });
 
-        expect(instance.paths.length).to.be.equal(2);
+        expect(instance.paths.length).to.equal(2);
         expect(instance.paths[1]).to.not.be.undefined;
         expect(instance.paths[1].remote).to.equal('/test/remote');
+    });
+
+    it('should return the observalbe paths as array', function() {
+        instance.addPath({
+            remote: "/test/remote/path/sync/",
+            local: "/test/local/path/sync/",
+            flags: {
+                direction: 0,
+                extension: ['css', 'js'],
+                ignore: ["!*.txt", "!ignore"]
+            }
+        });
+
+        let paths = instance.paths[0].getObservable();
+
+        expect(paths.length).to.equal(6)
     });
 });

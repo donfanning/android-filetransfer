@@ -5,9 +5,10 @@
     "paths": [
         {
             "flags": {
+                "recursive": true,
                 "direction": 0,
-                "ignore": [],
-                "extension": "*.*"
+                "ignore": ["*.txt", "ignoreFolder"],
+                "extension": "*"
             },
             "local": "/Users/Jan/Documents/GitHub/android-filetransfer/test/from/",
             "remote": "/Users/Jan/Documents/GitHub/android-filetransfer/test/to/",
