@@ -25,4 +25,8 @@ describe('FileIndex', function() {
         expect(result.checksum).to.not.be.undefined;
         expect(result.checksum).to.have.length.above(0);
     });
+
+    it('should write the index as dump to data', function() {
+        index.write();
+    });
 });
