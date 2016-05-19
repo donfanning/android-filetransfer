@@ -35,3 +35,6 @@ assets/vendor
 
 # Build destination files
 dist
+
+# Test output of mocha/chai
+test/output
