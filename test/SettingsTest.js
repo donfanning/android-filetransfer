@@ -51,14 +51,17 @@ describe('Settings', function() {
             remote: "/test/remote/path/sync/",
             local: "/test/local/path/sync/",
             flags: {
+                recursive: true,
                 direction: 0,
                 extension: ['css', 'js'],
                 ignore: ["!*.txt", "!ignore"]
             }
         });
 
-        let paths = instance.paths[0].getObservable();
+        let paths = instance.paths[1].getObservable();
 
-        expect(paths.length).to.equal(6)
+        expect(paths).to.not.be.undefined;
+        expect(paths.length).to.equal(6);
+        expect(paths[0]).to.equal('/test/remote/path/sync/**/*.{css,js}');
     });
 });
