@@ -1,13 +1,22 @@
-// Color: Branding
-$color-primary: #0403FF;
-$color-primary-contrast: #FFD203;
-$color-primary-dark: #0201B2;
+// Basic primary colors and their variation
+$color-primary-darkener: 10%;
+$color-primary-lightener: 10%;
 
-// Colors: Grayscale
-$color-gray-light: #E5E5E5;
-$color-gray-medium: #BFBFBF;
-$color-gray-dark: #7F7F7F;
-$color-gray-darker: #404040;
+$color-primary-blue: #6ABAFC;
+$color-primary-blue-light: lighten($color-primary-blue, $color-primary-lightener);
+$color-primary-blue-dark: darken($color-primary-blue, $color-primary-darkener);
+
+$color-primary-red: #E17586;
+$color-primary-red-light: lighten($color-primary-red, $color-primary-lightener);
+$color-primary-red-dark: darken($color-primary-red, $color-primary-darkener);
+
+$color-primary-green: #37D5B2;
+$color-primary-green-light: lighten($color-primary-green, $color-primary-lightener);
+$color-primary-green-dark: darken($color-primary-green, $color-primary-darkener);
+
+// Grayscale for backgrounds
+$color-gray-light: #F8F8F8;
+$color-gray-medium: #D4D4D4;
 
 // Component: Loader
 $loader-size: 50px;
