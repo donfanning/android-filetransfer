@@ -1,11 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "android-filetransfer",
+  "productName": "Android Filetransfer",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A Crossplatform compatible Android synchronization client",
   "main": "main.js",
   "packed": "android-filetransfer",
   "scripts": {
-    "start": "electron main.js",
+    "start": "./node_modules/.bin/electron .",
     "test": "./node_modules/.bin/_mocha ./test/run.js --reporter mochawesome --reporter-options reportDir=test/output,reportName=android-filetransfer"
   },
   "contributors": [
