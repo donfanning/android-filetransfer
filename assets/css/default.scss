@@ -15,8 +15,14 @@ html, body, main {
 }
 
 body {
-    background-color: $color-primary;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
+    font-weight: 500;
+    background-color: $color-gray-light;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 700;
 }
 
 small {
@@ -29,11 +35,11 @@ main {
 
 a {
     text-decoration: none;
-    color: $color-primary;
+    color: $color-primary-blue;
     will-change: color;
     @include transition(color .2s linear);
 
     &:hover {
-        color: $color-primary-dark;
+        color: $color-primary-blue-dark;
     }
 }
