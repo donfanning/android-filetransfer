@@ -4,7 +4,7 @@
 .component-loader {
     height: $loader-size;
     width: $loader-size;
-    border: $loader-border-size solid $color-primary-contrast;
+    border: $loader-border-size solid $color-gray-light;
     border-right-color: transparent;
     border-radius: 50%;
     display: inline-block;
