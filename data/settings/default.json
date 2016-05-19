@@ -14,24 +14,6 @@
             "local": "/Users/Jan/Documents/GitHub/android-filetransfer/test/from/",
             "remote": "/Users/Jan/Documents/GitHub/android-filetransfer/test/to/",
             "timestamp": "2016-05-19T15:22:37.791Z"
-        },
-        {
-            "flags": {
-                "extension": "**/*.*",
-                "ignore": []
-            },
-            "local": "/test/local",
-            "remote": "/test/remote",
-            "timestamp": "2016-05-19T15:22:37.791Z"
-        },
-        {
-            "flags": {
-                "extension": "**/*.*",
-                "ignore": []
-            },
-            "local": "/test/local",
-            "remote": "/test/remote",
-            "timestamp": "2016-05-19T15:22:37.791Z"
         }
     ]
 }
