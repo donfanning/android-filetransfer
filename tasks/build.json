@@ -21,7 +21,9 @@
                 "./assets/vendor/jquery/dist/jquery.js",
                 "./assets/vendor/hask/dist/hask.js"
             ],
-            "styles": []
+            "styles": [
+                "./assets/css/fonts*.{scss,css}"
+            ]
         }, {
             "name": "client",
             "scripts": [
