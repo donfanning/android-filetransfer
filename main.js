@@ -3,6 +3,7 @@ const electron = require('electron');
 
 // Module to control application life.
 const app = electron.app;
+app.setName(config.window.title);
 
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
@@ -17,9 +18,17 @@ function createWindow () {
 
     // and load the index.html of the app.
     mainWindow.loadURL(`file://${__dirname}/index.html`);
-
+    
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
+
+    // Adding dock icon if on Mac OS X
+    if (process.platform === 'darwin') {
+        app.dock.setIcon(config.osx.icon);
+    }
+
+    // Include Menu for OSX and Windows
+    require('./render/menu');
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
