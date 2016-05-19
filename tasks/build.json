@@ -39,7 +39,7 @@
             "./assets/fonts/**/*.{eot,svg,ttf,woff}"
         ],
         "./dist/assets/img": [
-            "./assets/img/**/*.{jpeg,jpg,png,gif,svg}"
+            "./assets/img/**/*.{jpeg,jpg,png,gif,svg,ico}"
         ]
     }
 }
