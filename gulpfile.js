@@ -26,6 +26,6 @@ gulp.task('develop', ['build', 'watch']);
 
 gulp.task('pack:create', utils.load('pack'));
 gulp.task('pack:archive', utils.load('archive'));
-gulp.task('pack', ['pack:create', 'pack:archive']);
+gulp.task('pack', ['pack:create']);
 
 gulp.task('default', [env === 'development' ? 'develop' : 'build']);
