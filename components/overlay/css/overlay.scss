@@ -8,7 +8,7 @@
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
     .center-wrapper {
-        position: fixed;
+        position: absolute;
         min-width: 100px;
         text-align: center;
         top: 50%;
