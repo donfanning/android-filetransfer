@@ -1,59 +1,49 @@
-<aside>
-    <div class="sidebar-element">
-        <h2>Devices</h2>
-        <nav class="navigation--devices">
-            <ul>
-                <li class="active">
-                    <i class="icon-laptop"></i>
-                    This Computer (active)
-                </li>
-                <li>
-                    <i class="icon-smartphone"></i>
-                    Smartphone XY
-                </li>
-                <li>
-                    <i class="icon-tablet_android"></i>
-                    Tablet XY
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="sidebar-element">
-        <h2>Sync</h2>
-        <nav class="navigation--actions">
-            <ul>
-                <li>
-                    <i class="icon-library_music"></i>
-                    Music
-                </li>
-                <li>
-                    <i class="icon-library_books"></i>
-                    Documents
-                </li>
-                <li>
-                    <i class="icon-movie"></i>
-                    Movies
-                </li>
-                <li>
-                    <i class="icon-person"></i>
-                    Custom
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="sidebar-element">
-        <h2>Settings</h2>
-        <nav class="navigation--settings">
-            <ul>
-                <li>
-                    <i class="icon-file_upload"></i>
-                    Import
-                </li>
-                <li>
-                    <i class="icon-file_download"></i>
-                    Export
-                </li>
-            </ul>
-        </nav>
-    </div>
+<aside ng-controller="SidebarController">
+    <nav class="sidebar--navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="separator"></li>
+            <li>
+                <a href="#sync">
+                    <i class="icon-sync"></i>
+                    <span>Synchronization</span>
+                </a>
+            </li>
+            <li class="separator"></li>
+            <li>
+                <a href="#settings">
+                    <i class="icon-settings"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sync">
+                    <i class="icon-notifications"></i>
+                    <span>Notifications</span>
+                </a>
+            </li>
+            <li class="separator"></li>
+            <li>
+                <span ng-click="actions.quit()">
+                    <i class="icon-exit_to_app"></i>
+                    <span>Exit</span>
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sidebar--actions">
+        <ul>
+            <li>
+                <span class="action-collapse-reveal" ng-click="actions.collapse()">
+                    <i class="icon-keyboard_arrow_left swap-collapsable-icon"></i>
+                    <span>Collapse</span>
+                </span>
+            </li>
+        </ul>
+    </nav>
 </aside>

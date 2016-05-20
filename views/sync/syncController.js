@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('AndroidFiletransfer')
-        .controller('syncController', ['syncService', SyncController]);
+        .controller('syncController', ['$scope', 'syncService', SyncController]);
 
-    function SyncController(syncService) {
-        // Empty controller right now
+    function SyncController($scope, syncService) {
+        $scope.message = 'SyncController';
     }
 })();
