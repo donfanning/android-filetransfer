@@ -2,14 +2,17 @@
 $color-primary-darkener: 10%;
 $color-primary-lightener: 10%;
 
+$color-primary-blue-contrast: #fff;
 $color-primary-blue: #6ABAFC;
 $color-primary-blue-light: lighten($color-primary-blue, $color-primary-lightener);
 $color-primary-blue-dark: darken($color-primary-blue, $color-primary-darkener);
 
+$color-primary-red-contrast: #fff;
 $color-primary-red: #E17586;
 $color-primary-red-light: lighten($color-primary-red, $color-primary-lightener);
 $color-primary-red-dark: darken($color-primary-red, $color-primary-darkener);
 
+$color-primary-green-contrast: #fff;
 $color-primary-green: #37D5B2;
 $color-primary-green-light: lighten($color-primary-green, $color-primary-lightener);
 $color-primary-green-dark: darken($color-primary-green, $color-primary-darkener);
