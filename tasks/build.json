@@ -29,6 +29,7 @@
             "scripts": [
                 "./assets/vendor/angular/angular.js",
                 "./assets/vendor/angular-route/angular-route.js",
+                "./assets/vendor/angular-animate/angular-animate.js",
                 "./views/client.js",
                 "./views/_global/**/*.js",
                 "./views/*/*.js"
