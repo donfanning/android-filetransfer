@@ -33,9 +33,11 @@ npm install && gulp && npm start
 
 ## Useful Links (Docs)
 
-* Angular.js [ngRoute](https://docs.angularjs.org/api/ngRoute) directive
-* Angular.js [ngInclude](https://docs.angularjs.org/api/ng/directive/ngInclude) directive
-* Angular.js [ngAnimate](https://docs.angularjs.org/api/ngAnimate) directive
+* Angular.js [ng:route](https://docs.angularjs.org/api/ngRoute) directive
+* Angular.js [ng:include](https://docs.angularjs.org/api/ng/directive/ngInclude) directive
+* Angular.js [ng:animate](https://docs.angularjs.org/api/ngAnimate) directive
+* Angular.js [ng:repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat) directive
 * ECMAScript 6 [Guide and How-To basics](http://www.2ality.com/2015/08/getting-started-es6.html)
+* List of [USB ID's](http://www.linux-usb.org/usb.ids) for Product and Vendor
 
 #### License [Apache License Version 2](LICENSE)
