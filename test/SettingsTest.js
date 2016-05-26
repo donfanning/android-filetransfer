@@ -62,6 +62,6 @@ describe('Settings', function() {
 
         expect(paths).to.not.be.undefined;
         expect(paths.length).to.equal(6);
-        expect(paths[0]).to.equal('/test/remote/path/sync/**/*.{css,js}');
+        expect(paths[0]).to.contain('/test/remote/path/sync/**/*.{css,js}');
     });
 });
