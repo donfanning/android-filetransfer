@@ -33,11 +33,21 @@ npm install && gulp && npm start
 
 ## Useful Links (Docs)
 
-* Angular.js [ng:route](https://docs.angularjs.org/api/ngRoute) directive
-* Angular.js [ng:include](https://docs.angularjs.org/api/ng/directive/ngInclude) directive
-* Angular.js [ng:animate](https://docs.angularjs.org/api/ngAnimate) directive
-* Angular.js [ng:repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat) directive
-* ECMAScript 6 [Guide and How-To basics](http://www.2ality.com/2015/08/getting-started-es6.html)
-* List of [USB ID's](http://www.linux-usb.org/usb.ids) for Product and Vendor
+* **Client-Side ressources**
+    * Angular.js [ng:route](https://docs.angularjs.org/api/ngRoute) directive (Routing System)
+    * Angular.js [ng:include](https://docs.angularjs.org/api/ng/directive/ngInclude) directive (Partials)
+    * Angular.js [ng:animate](https://docs.angularjs.org/api/ngAnimate) directive (View transitions)
+    * Angular.js [ng:repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat) directive (Loops)
+    * Angular.js [ng:bind](https://docs.angularjs.org/api/ng/directive/ngBind) directive (Input binding)
+    * Angular.js [ng:click](https://docs.angularjs.org/api/ng/directive/ngClick) directive (On-Click)
+    * Angular.js [ng:controller](https://docs.angularjs.org/api/ng/directive/ngController) directive (MVC-Controller)
+    * Angular.js [ng:if](https://docs.angularjs.org/api/ng/directive/ngIf) directive (Conditionals)
+    * Angular.js [$http](https://docs.angularjs.org/api/ng/provider/$httpProvider) service (AJAX)
+    * Angular.js [$scope](https://docs.angularjs.org/guide/scope) application model (Base)
+* **Server-Side ressources**
+    * ECMAScript 6 [Guide and How-To basics](http://www.2ality.com/2015/08/getting-started-es6.html)
+    * Repository of the (node-usb)[https://github.com/nonolith/node-usb] module for accessing device infos and r/w process
+    * Repository of the (node-usb-detection)[https://github.com/MadLittleMods/node-usb-detection] module to view connected usb devices and list them with a name and extended information
+    * List of [USB ID's](http://www.linux-usb.org/usb.ids) for Product and Vendor
 
 #### License [Apache License Version 2](LICENSE)
