@@ -45,9 +45,15 @@ npm install && gulp && npm start
     * Angular.js [$http](https://docs.angularjs.org/api/ng/provider/$httpProvider) service (AJAX)
     * Angular.js [$scope](https://docs.angularjs.org/guide/scope) application model (Base)
 * **Server-Side ressources**
+    * Electron [API Documentation](http://electron.atom.io/docs/) for application-core ressources
     * ECMAScript 6 [Guide and How-To basics](http://www.2ality.com/2015/08/getting-started-es6.html)
     * Repository of the (node-usb)[https://github.com/nonolith/node-usb] module for accessing device infos and r/w process
     * Repository of the (node-usb-detection)[https://github.com/MadLittleMods/node-usb-detection] module to view connected usb devices and list them with a name and extended information
     * List of [USB ID's](http://www.linux-usb.org/usb.ids) for Product and Vendor
+* **Version Control with Git**
+    * Guide [Git for dummies](https://rogerdudler.github.io/git-guide/index.de.html) with examples and explenations
+* **Unit-Testing ressources**
+    * Assertion with the [chai](http://chaijs.com/api/bdd/) library
+    * Test-suite [mocha](https://mochajs.org/) used for running tests and reporting results
 
 #### License [Apache License Version 2](LICENSE)
