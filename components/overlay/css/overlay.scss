@@ -2,7 +2,7 @@
 
 .component-overlay {
     max-height: 100%;
-    background-color: $color-primary;
+    background-color: $color-primary-blue;
     transition-property: all;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -23,7 +23,7 @@
     .info {
         &.info-loading {
             margin-top: 20px;
-            color: $color-primary-contrast;
+            color: $color-primary-blue-contrast;
             text-transform: uppercase;
             letter-spacing: .2em;
             font-weight: 700;

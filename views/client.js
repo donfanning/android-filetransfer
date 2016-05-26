@@ -4,7 +4,7 @@
     const path = require('path');
     const templateUrl = path.join(__dirname, 'views');
 
-    angular.module('AndroidFiletransfer', ['ngRoute'])
+    angular.module('AndroidFiletransfer', ['ngRoute', 'ngAnimate'])
         .config(['$routeProvider', function($routeProvider) {
 
             $routeProvider.when('/', {

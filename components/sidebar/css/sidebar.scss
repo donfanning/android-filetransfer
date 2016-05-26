@@ -1,6 +1,108 @@
 @import '../../../assets/css/variables';
 @import '../../../assets/css/mixins';
 
+@keyframes collapse {
+    to { width: 50px; }
+}
+
+@keyframes reveal {
+    to { width: 200px; }
+}
+
 .component-sidebar {
-    background-color: $color-gray-medium;
+    background-color: $color-primary-blue;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+
+    aside {
+        height: auto;
+        min-height: 100%;
+    }
+
+    nav {
+        color: $color-primary-blue-contrast;
+
+        a {
+            color: inherit;
+        }
+
+        li {
+            &.separator {
+                border-top: 1px solid $color-primary-blue-light;
+            }
+
+            > a, > span {
+                @include transition(background-color .3s linear);
+                cursor: pointer;
+                will-change: background-color;
+                display: block;
+                padding: 15px 0 15px 15px;
+
+                span {
+                    // Inner text animations
+                    @include transition(opacity .2s linear);
+                    will-change: opacity;
+                }
+
+                &:hover {
+                    background-color: $color-primary-blue-light;
+                }
+
+                &:active {
+                    background-color: $color-primary-blue-dark;
+                }
+            }
+
+            [class*='icon-'] {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    // Subnavigation skins for bottom nav
+    nav.sidebar--navigation {}
+    nav.sidebar--actions {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+    &.--reveal {
+        animation: reveal .5s both ease-in-out;
+
+        nav li > a,
+        nav li > span {
+            padding: 15px 0 15px 15px;
+
+            i {
+                margin: 0 5px 0 0;
+                text-align: left;
+                display: inline-block;
+            }
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    &.--collapse {
+        animation: collapse .5s both ease-in-out;
+
+        nav li > a,
+        nav li > span {
+            padding: 10px 0;
+
+            i {
+                margin: 0;
+                text-align: center;
+                display: block;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
 }
