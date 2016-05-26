@@ -47,8 +47,8 @@ npm install && gulp && npm start
 * **Server-Side ressources**
     * Electron [API Documentation](http://electron.atom.io/docs/) for application-core ressources
     * ECMAScript 6 [Guide and How-To basics](http://www.2ality.com/2015/08/getting-started-es6.html)
-    * Repository of the (node-usb)[https://github.com/nonolith/node-usb] module for accessing device infos and r/w process
-    * Repository of the (node-usb-detection)[https://github.com/MadLittleMods/node-usb-detection] module to view connected usb devices and list them with a name and extended information
+    * Repository of the [node-usb](https://github.com/nonolith/node-usb) module for accessing device infos and r/w process
+    * Repository of the [node-usb-detection](https://github.com/MadLittleMods/node-usb-detection) module to view connected usb devices and list them with a name and extended information
     * List of [USB ID's](http://www.linux-usb.org/usb.ids) for Product and Vendor
 * **Version Control with Git**
     * Guide [Git for dummies](https://rogerdudler.github.io/git-guide/index.de.html) with examples and explenations
