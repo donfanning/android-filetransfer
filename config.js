@@ -9,9 +9,9 @@ exports = module.exports = {
         title: 'Android Filetransfer',
         resizable: true,
         center: true,
-        icon: path.join(__dirname, 'dist/assets/img/appicon.png')
+        icon: path.join(__dirname, 'assets/img/appicon.png')
     },
     osx: {
-        icon: path.join(__dirname, 'dist/assets/img/appicon.png')
+        icon: path.join(__dirname, 'assets/img/appicon.png')
     }
 };
