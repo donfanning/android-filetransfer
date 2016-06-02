@@ -1,3 +1,16 @@
-<p>
-    Device HTMl
-</p>
+<table>
+    <thead>
+        <th>#</th>
+        <th>Device Name</th>
+        <th>Manufacturer</th>
+        <th>Serial No.</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="device in devices track by $index">
+            <td>{{$index + 1}}</td>
+            <td>{{device.deviceName}}</td>
+            <td>{{device.manufacturer}}</td>
+            <td>{{device.serialNumber}}</td>
+        </tr>
+    </tbody>
+</table>

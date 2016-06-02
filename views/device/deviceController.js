@@ -1,10 +1,14 @@
 (function() {
     'use strict';
 
-    angular.module('AndroidFiletransfer')
-        .controller('deviceController', ['deviceService', DeviceController]);
+    const DeviceManager = require('./lib/DeviceManager');
 
-    function DeviceController(deviceService) {
-        // Empty controller right now
+    angular.module('AndroidFiletransfer')
+        .controller('deviceController', ['deviceService', '$scope', DeviceController]);
+
+    function DeviceController(deviceService, $scope) {
+        DeviceManager.list(function(devices) {
+            $scope.devices = devices;
+        });
     }
 })();
